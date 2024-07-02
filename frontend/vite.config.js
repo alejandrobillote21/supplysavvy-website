@@ -6,8 +6,16 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api/": "http://localhost:5000",
-      "/uploads/": "http://localhost:5000",
+      "/api/": {
+        target: "https://supplysavvy-website-api.vercel.app",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/uploads/": {
+        target: "https://supplysavvy-website-api.vercel.app",
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 });
