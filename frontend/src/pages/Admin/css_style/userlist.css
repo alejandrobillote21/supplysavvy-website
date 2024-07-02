@@ -1,0 +1,101 @@
+/* userlist.css */
+
+.userlist-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #1a1a1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    text-align: center; /* Center align text */
+  }
+  
+  .userlist-search {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .userlist-search:focus {
+    outline: none;
+    border-color: #5a67d8;
+  }
+  
+  .userlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .userlist-table th,
+  .userlist-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #666666;
+  }
+  
+  .userlist-table th {
+    background-color: #ffb30f;
+    color: #1a1a1a;
+  }
+  
+  .userlist-table tbody tr:nth-child(even) {
+    background-color: #444444;
+  }
+  
+  .userlist-table tbody tr:hover {
+    background-color: #555555;
+  }
+  
+  .userlist-edit-input {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #444444;
+    color: #ffffff;
+  }
+  
+  .userlist-edit-button,
+  .userlist-action-button {
+    background-color: #808080;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .userlist-edit-button:hover,
+  .userlist-action-button:hover {
+    background-color: #555555;
+  }
+  
+  .userlist-edit-button:focus,
+  .userlist-action-button:focus {
+    outline: none;
+  }
+  
+  .userlist-action-button {
+    background-color: transparent;
+  }
+  
+  .userlist-action-button:hover {
+    background-color: #ffb30f;
+  }
+  

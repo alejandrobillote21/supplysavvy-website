@@ -1,0 +1,129 @@
+.product-container {
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-container:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .brand-overlay {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background-color: #ffb30f;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.98rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .product-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  
+  .product-details {
+    padding: 1.5rem;
+    background-color: #000000;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  
+  .product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .product-description {
+    font-size: 0.875rem;
+    color: #ffffff;
+    margin-top: 1rem;
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  .update-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffb30f;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .update-button:hover {
+    background-color: #e4a91d;
+  }
+  
+  .read-more-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.978rem;
+    font-weight: bold;
+    color: #000000; /* Matched to the brand overlay text color */
+    background-color: #ffb30f;
+    border-radius: 0.98rem; /* Matched to the brand overlay */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .read-more-button:hover,
+  .read-more-button:hover .read-more-svg {
+    background-color: #093a80;
+    color: #ffffff; /* Adjusted to white to match brand overlay hover effect */
+  }
+  
+  .read-more-button svg {
+    margin-left: 0.5rem;
+    stroke-width: 1.5px; /* Adjusted stroke width for smaller size */
+  }
+  
+  .cart-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ffb30f;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .cart-button:hover {
+    color: #808080;
+  }
+  

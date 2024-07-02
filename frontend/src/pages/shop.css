@@ -1,0 +1,122 @@
+/* shop.css */
+
+.filter-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #666666;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.filter-checkbox {
+  margin-right: 0.75rem;
+}
+
+.filter-label {
+  color: #ffffff;
+}
+
+.filter-button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+}
+
+.apply-button:hover {
+  background-color: #4a4a4a;
+}
+
+.reset-button {
+  background-color: #555555;
+  color: #ffffff;
+  border: none;
+}
+
+.reset-button:hover {
+  background-color: #777777;
+}
+
+.product-container {
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.product-container:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 0;
+}
+
+.product-details {
+  padding: 1rem;
+  background-color: #000000;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: 0;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.product-date {
+  font-size: 0.875rem;
+  color: #777777;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.update-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.68rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffb30f;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #e4a91d;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}

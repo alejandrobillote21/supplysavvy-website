@@ -1,0 +1,113 @@
+/* productupdate.css */
+
+.container {
+    margin: 4rem auto; /* Centering the container vertically and horizontally */
+    padding: 2rem; /* Adjusted padding for better spacing */
+    max-width: 1200px; /* Increased maximum width for larger screens */
+    background-color: #1a1a1a; /* Match background color */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content horizontally */
+  }
+  
+  .container:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .section-header {
+    text-align: center;
+    font-size: 3rem; /* Adjusted section header font size */
+    color: #ffb30f; /* Match section header color */
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .filter-section {
+    margin-bottom: 2rem;
+  }
+  
+  .input-filter {
+    padding: 1rem; /* Adjusted padding for input */
+    width: 100%; /* Full width for input */
+    font-size: 1rem; /* Adjusted font size */
+    border: 1px solid #666666; /* Match form input border color */
+    border-radius: 8px;
+    background-color: #333333; /* Match background color for input */
+    color: #ffffff;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  }
+  
+  .input-filter:focus {
+    outline: none;
+    border-color: #ffb30f; /* Match focus color */
+    box-shadow: 0 0 0 3px rgba(255, 179, 15, 0.4); /* Adjusted focus box shadow */
+  }
+  
+  .table-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%; /* Full width for table container */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 1rem; /* Adjusted padding for table cells */
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+  }
+  
+  .order-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .status-paid {
+    background-color: green;
+    color: white;
+  }
+  
+  .status-pending {
+    background-color: orange;
+    color: white;
+  }
+  
+  .more-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+  
+    .section-header {
+      font-size: 2.5rem; /* Adjusted section header font size for smaller screens */
+    }
+  }
+  
