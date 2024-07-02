@@ -18,11 +18,14 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors({
-  origin: ["https://supplysavvy-website-frontend.vercel.app"],
+// Allow requests from specific origin with required methods
+const corsOptions = {
+  origin: "https://supplysavvy-website-frontend.vercel.app",
   methods: ["POST", "GET", "PUT", "DELETE"],
-  credentials: true
-}));
+  credentials: true, // Enable credentials (cookies, authorization headers) if needed
+};
+
+app.use(cors(corsOptions));
 
 // Serve static files (if applicable)
 const __dirname = path.resolve();
