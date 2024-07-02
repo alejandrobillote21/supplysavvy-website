@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
   origin: ["https://supplysavvy-website-frontend.vercel.app"],
-  methods: ["POST", "GET", "PUT", "DELETE"],
+  methods: ["POST", "GET"],
   credentials: true
 }));
 
